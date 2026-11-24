@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BromoJPG - Jelajahi Keajaiban Gunung Bromo</title>
+<meta name="description" content="BromoJPG - Paket wisata Gunung Bromo, sunrise tour, jeep tour, dan camping. Booking mudah lewat WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="navbar__logo">
+      <span class="logo-icon">⛰</span> BromoJPG
+    </a>
+    <nav class="navbar__menu" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#destinasi">Destinasi</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#booking">Booking</a>
+      <a href="#penjemputan">Penjemputan</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="https://wa.me/6285235201371?text=hallo%2C%20saya%20berminat%20liburan%20ke%20bromo%20bareng%20bromojpg" class="btn btn--primary navbar__cta" target="_blank" rel="noopener">Booking Sekarang</a>
+    <button class="navbar__burger" id="navBurger" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__overlay"></div>
+  <div class="container hero__content">
+    <p class="hero__eyebrow">Memories For Life</p>
+    <h1 class="hero__title">Jelajahi Keajaiban<br>Gunung Bromo</h1>
+    <p class="hero__subtitle">Sunrise terbaik, savana luas, dan lautan pasir yang tak terlupakan — bersama BromoJPG, teman perjalananmu ke Bromo.</p>
+    <div class="hero__actions">
+      <a href="#booking" class="btn btn--primary">Lihat Jadwal</a>
+      <a href="https://wa.me/6285235201371?text=hallo%2C%20saya%20berminat%20liburan%20ke%20bromo%20bareng%20bromojpg" class="btn btn--outline" target="_blank" rel="noopener">Chat WhatsApp</a>
+    </div>
+
+    <div class="booking-bar">
+      <div class="booking-bar__tabs">
+        <button class="is-active" data-tab="jeep">Jeep Tour</button>
+        <button data-tab="paket">Paket Wisata</button>
+        <button data-tab="camping">Camping</button>
+      </div>
+      <div class="booking-bar__fields">
+        <div class="field">
+          <span class="field__icon">📍</span>
+          <div>
+            <label>Titik Jemput</label>
+            <p>Malang / Surabaya / Probolinggo</p>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__icon">📅</span>
+          <div>
+            <label>Tanggal Berangkat</label>
+            <p>Pilih tanggal perjalanan</p>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__icon">🌄</span>
+          <div>
+            <label>Tanggal Pulang</label>
+            <p>Sesuai paket trip</p>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__icon">👥</span>
+          <div>
+            <label>Jumlah Orang</label>
+            <p>1-20 peserta</p>
+          </div>
+        </div>
+        <a href="#booking" class="booking-bar__search" aria-label="Cari jadwal">🔍</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- DESTINASI -->
+<section class="section" id="destinasi">
+  <div class="container">
+    <p class="section__eyebrow">Spot Favorit</p>
+    <h2 class="section__title">Destinasi yang Akan Dituju</h2>
+    <p class="section__desc">Setiap rute kami dirancang untuk menangkap sisi terbaik Gunung Bromo, dari matahari terbit hingga lautan pasir.</p>
+
+    <div class="grid grid--3 destinasi-grid">
+      <article class="card">
+        <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card__body">
+          <h3>Penanjakan 1</h3>
+          <p>Spot sunrise paling populer dengan panorama Bromo, Semeru, dan Batok dari ketinggian.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card__body">
+          <h3>Kawah Bromo</h3>
+          <p>Mendekat ke kawah aktif melalui anak tangga, merasakan langsung hembusan belerang khas Bromo.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1444392061186-9fc38f84f726?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card__body">
+          <h3>Savana Teletubbies</h3>
+          <p>Padang rumput hijau luas yang jadi favorit untuk foto dan bersantai sejenak di tengah perjalanan.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card__body">
+          <h3>Pasir Berbisik</h3>
+          <p>Hamparan pasir vulkanik luas dengan suara angin khas, lokasi ikonik untuk foto cinematic.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card__body">
+          <h3>Bukit Cinta</h3>
+          <p>View point alternatif yang tak kalah indah dan lebih sepi dari Penanjakan 1.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card__body">
+          <h3>Bukit Kingkong</h3>
+          <p>Spot sunrise tersembunyi dengan formasi batu unik dan pemandangan 360 derajat.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI -->
+<section class="section section--alt" id="galeri">
+  <div class="container">
+    <p class="section__eyebrow">Dokumentasi</p>
+    <h2 class="section__title">Galeri Perjalanan</h2>
+    <p class="section__desc">Momen-momen dari para traveler yang sudah menjelajah Bromo bareng kami.</p>
+
+    <div class="gallery" id="galleryGrid">
+      <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=700&q=80" alt="Sunrise di Bromo" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=700&q=80" alt="Pemandangan gunung" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=80" alt="Golden hour pegunungan" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80" alt="Lautan pasir" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Jeep safari Bromo" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1443860623430-684c3eaf9871?auto=format&fit=crop&w=700&q=80" alt="Kabut pegunungan" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=700&q=80" alt="Siluet gunung" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?auto=format&fit=crop&w=700&q=80" alt="Trekking savana" loading="lazy">
+    </div>
+    <p class="gallery__note">*Ganti gambar di atas dengan foto dokumentasi asli BromoJPG.</p>
+  </div>
+</section>
+
+<!-- JADWAL BOOKING -->
+<section class="section" id="booking">
+  <div class="container">
+    <p class="section__eyebrow">Atur Perjalananmu</p>
+    <h2 class="section__title">Jadwal &amp; Booking</h2>
+    <p class="section__desc">Pilih paket yang sesuai, lalu konfirmasi langsung lewat WhatsApp — admin kami siap bantu 24 jam.</p>
+
+    <div class="schedule-grid">
+      <article class="schedule-card">
+        <div class="schedule-card__badge">Favorit</div>
+        <h3>Sunrise Tour</h3>
+        <p class="schedule-card__time">Berangkat 01.00 WIB &middot; Durasi ±7 jam</p>
+        <ul class="schedule-card__list">
+          <li>Penanjakan 1 / Bukit Kingkong</li>
+          <li>Kawah Bromo</li>
+          <li>Savana Teletubbies</li>
+          <li>Pasir Berbisik</li>
+        </ul>
+        <div class="schedule-card__price">Rp 450.000<span>/orang</span></div>
+        <a class="btn btn--primary btn--block" target="_blank" rel="noopener"
+           href="https://wa.me/6285235201371?text=hallo%2C%20saya%20berminat%20liburan%20ke%20bromo%20bareng%20bromojpg%2C%20untuk%20paket%20Sunrise%20Tour">Booking via WA</a>
+      </article>
+
+      <article class="schedule-card">
+        <div class="schedule-card__badge">Hemat</div>
+        <h3>Midnight Tour</h3>
+        <p class="schedule-card__time">Berangkat 23.00 WIB &middot; Durasi ±9 jam</p>
+        <ul class="schedule-card__list">
+          <li>Penjemputan lebih awal</li>
+          <li>Penanjakan 1</li>
+          <li>Kawah Bromo &amp; Savana</li>
+          <li>Pasir Berbisik</li>
+        </ul>
+        <div class="schedule-card__price">Rp 400.000<span>/orang</span></div>
+        <a class="btn btn--primary btn--block" target="_blank" rel="noopener"
+           href="https://wa.me/6285235201371?text=hallo%2C%20saya%20berminat%20liburan%20ke%20bromo%20bareng%20bromojpg%2C%20untuk%20paket%20Midnight%20Tour">Booking via WA</a>
+      </article>
+
+      <article class="schedule-card">
+        <div class="schedule-card__badge">2D1N</div>
+        <h3>Sunrise + Camping</h3>
+        <p class="schedule-card__time">Hari 1 sore &ndash; Hari 2 siang</p>
+        <ul class="schedule-card__list">
+          <li>Camping area Bromo</li>
+          <li>Api unggun &amp; BBQ</li>
+          <li>Sunrise Tour lengkap</li>
+          <li>Penginapan tenda dome</li>
+        </ul>
+        <div class="schedule-card__price">Rp 850.000<span>/orang</span></div>
+        <a class="btn btn--primary btn--block" target="_blank" rel="noopener"
+           href="https://wa.me/6285235201371?text=hallo%2C%20saya%20berminat%20liburan%20ke%20bromo%20bareng%20bromojpg%2C%20untuk%20paket%20Sunrise%20%2B%20Camping">Booking via WA</a>
+      </article>
+
+      <article class="schedule-card">
+        <div class="schedule-card__badge">Private</div>
+        <h3>Private Jeep Tour</h3>
+        <p class="schedule-card__time">Fleksibel &middot; Maks. 6 orang/jeep</p>
+        <ul class="schedule-card__list">
+          <li>Jeep eksklusif rombongan</li>
+          <li>Rute bisa disesuaikan</li>
+          <li>Driver lokal berpengalaman</li>
+          <li>Dokumentasi opsional</li>
+        </ul>
+        <div class="schedule-card__price">Rp 1.100.000<span>/jeep</span></div>
+        <a class="btn btn--primary btn--block" target="_blank" rel="noopener"
+           href="https://wa.me/6285235201371?text=hallo%2C%20saya%20berminat%20liburan%20ke%20bromo%20bareng%20bromojpg%2C%20untuk%20Private%20Jeep%20Tour">Booking via WA</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKEMA PENJEMPUTAN -->
+<section class="section section--alt" id="penjemputan">
+  <div class="container">
+    <p class="section__eyebrow">Alur Perjalanan</p>
+    <h2 class="section__title">Skema Penjemputan</h2>
+    <p class="section__desc">Kami jemput langsung dari titik meeting point terdekat agar perjalananmu lebih praktis.</p>
+
+    <div class="pickup">
+      <div class="pickup__steps">
+        <div class="pickup__step">
+          <div class="pickup__num">1</div>
+          <h3>Konfirmasi Booking</h3>
+          <p>Chat admin via WhatsApp, pilih paket &amp; tanggal keberangkatan.</p>
+        </div>
+        <div class="pickup__step">
+          <div class="pickup__num">2</div>
+          <h3>DP &amp; Titik Jemput</h3>
+          <p>Lakukan DP dan tentukan titik jemput sesuai area kamu.</p>
+        </div>
+        <div class="pickup__step">
+          <div class="pickup__num">3</div>
+          <h3>Penjemputan</h3>
+          <p>Driver akan menjemput sesuai jadwal dan membawa menuju Bromo.</p>
+        </div>
+        <div class="pickup__step">
+          <div class="pickup__num">4</div>
+          <h3>Tur Dimulai</h3>
+          <p>Nikmati seluruh rangkaian destinasi bersama guide BromoJPG.</p>
+        </div>
+      </div>
+
+      <div class="pickup__areas">
+        <h3>Titik Jemput Tersedia</h3>
+        <ul>
+          <li><span>Kota Malang</span><span>est. 21.00 WIB</span></li>
+          <li><span>Kota Batu</span><span>est. 21.30 WIB</span></li>
+          <li><span>Surabaya</span><span>est. 19.30 WIB</span></li>
+          <li><span>Probolinggo</span><span>est. 23.00 WIB</span></li>
+          <li><span>Cemoro Lawang</span><span>est. 00.30 WIB</span></li>
+        </ul>
+        <p class="pickup__note">Titik jemput di luar area di atas bisa didiskusikan langsung dengan admin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <p class="section__eyebrow">Masih Ragu?</p>
+    <h2 class="section__title">Pertanyaan yang Sering Ditanyakan</h2>
+
+    <div class="faq">
+      <div class="faq__item">
+        <button class="faq__question">
+          Apa saja yang perlu dibawa saat tur Bromo?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Jaket tebal, sarung tangan, masker/buff, senter kecil, dan kamera. Suhu di area Bromo bisa mencapai 5-10°C saat dini hari.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          Apakah harga paket sudah termasuk tiket masuk?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Harga sudah termasuk sewa jeep dan driver. Tiket masuk kawasan TNBTS dibayar terpisah di lokasi sesuai tarif resmi.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          Bagaimana cara melakukan pembayaran?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Pembayaran DP via transfer bank/e-wallet untuk mengunci jadwal, pelunasan bisa saat hari-H atau sesuai kesepakatan dengan admin.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          Apakah bisa reschedule jika cuaca buruk?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Bisa, kami akan menginformasikan kondisi cuaca/kabut terkini dan menawarkan opsi reschedule tanpa biaya tambahan.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          Berapa minimal jumlah peserta untuk booking?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Minimal 1 orang untuk paket open trip (akan digabung dengan peserta lain), dan tanpa minimal untuk private jeep tour.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <p class="navbar__logo"><span class="logo-icon">⛰</span> BromoJPG</p>
+      <p>Teman perjalananmu menjelajahi keindahan Gunung Bromo.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Jelajahi</h4>
+      <a href="#destinasi">Destinasi</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#booking">Booking</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="footer__col">
+      <h4>Kontak</h4>
+      <a href="https://wa.me/6285235201371" target="_blank" rel="noopener">WhatsApp: +62 852-3520-1371</a>
+      <a href="mailto:hello@bromojpg.com">hello@bromojpg.com</a>
+      <span>Probolinggo, Jawa Timur</span>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2026 BromoJPG. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/6285235201371?text=hallo%2C%20saya%20berminat%20liburan%20ke%20bromo%20bareng%20bromojpg"
+   class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp BromoJPG">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor">
+    <path d="M16.004 2.667c-7.364 0-13.333 5.97-13.333 13.333 0 2.351.615 4.646 1.783 6.667L2.667 29.333l6.84-1.794a13.27 13.27 0 0 0 6.497 1.69h.006c7.363 0 13.333-5.969 13.333-13.333 0-3.562-1.388-6.912-3.907-9.43a13.246 13.246 0 0 0-9.432-3.799zm0 24.4a11.03 11.03 0 0 1-5.63-1.54l-.404-.24-4.06 1.065 1.084-3.957-.263-.406a11.044 11.044 0 0 1-1.693-5.927c0-6.113 4.975-11.088 11.092-11.088a11.03 11.03 0 0 1 7.845 3.252 11.028 11.028 0 0 1 3.248 7.845c-.003 6.116-4.978 11.092-11.11 11.096zm6.086-8.305c-.334-.167-1.978-.977-2.285-1.088-.307-.112-.53-.167-.753.167s-.863 1.088-1.058 1.312c-.195.223-.39.251-.724.084-.334-.167-1.41-.52-2.686-1.658-.993-.886-1.664-1.98-1.86-2.314-.194-.335-.021-.516.147-.683.15-.15.334-.39.5-.585.167-.195.223-.334.334-.558.112-.223.056-.418-.028-.585-.084-.167-.753-1.814-1.032-2.483-.272-.653-.549-.565-.753-.576l-.642-.011c-.223 0-.585.084-.892.419-.307.334-1.17 1.144-1.17 2.79s1.198 3.236 1.365 3.459c.167.223 2.357 3.6 5.71 5.049.798.345 1.42.55 1.905.703.8.254 1.528.218 2.104.133.642-.096 1.978-.809 2.257-1.59.279-.782.279-1.452.195-1.591-.084-.14-.307-.223-.642-.39z"/>
+  </svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
