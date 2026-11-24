@@ -60,5 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
     overlay.addEventListener('click', () => { overlay.style.display = 'none'; });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') overlay.style.display = 'none';
+    });
   }
 });
