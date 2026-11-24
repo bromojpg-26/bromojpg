@@ -99,7 +99,12 @@ ul { list-style: none; }
   gap: 8px;
 }
 .navbar.scrolled .navbar__logo { color: var(--ink); }
-.logo-icon { color: var(--amber); }
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+}
 .navbar__menu {
   display: flex;
   gap: 32px;
@@ -136,7 +141,7 @@ ul { list-style: none; }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url('https://images.unsplash.com/photo-1472791108553-c9405341e398?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  background: url('../assets/hero-bromo.jpg') center/cover no-repeat;
   color: var(--white);
   padding: 140px 0 80px;
 }
