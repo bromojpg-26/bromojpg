@@ -43,6 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Gallery show more / show less
+  const galleryToggle = document.getElementById('galleryToggle');
+  if (galleryToggle) {
+    galleryToggle.addEventListener('click', () => {
+      const hiddenImgs = document.querySelectorAll('#galleryGrid .gallery__extra');
+      const isExpanded = galleryToggle.classList.toggle('is-expanded');
+      hiddenImgs.forEach(img => img.classList.toggle('is-hidden', !isExpanded));
+      galleryToggle.textContent = isExpanded ? 'Lihat Sebagian' : 'Selengkapnya';
+      if (!isExpanded) {
+        document.getElementById('galeri').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+
   // Gallery lightbox
   const galleryImgs = document.querySelectorAll('#galleryGrid img');
   if (galleryImgs.length) {
