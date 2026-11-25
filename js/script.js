@@ -18,6 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => navMenu.classList.remove('is-open'));
   });
 
+  // Destinasi dropdown
+  document.querySelectorAll('.navbar__dropdown').forEach(dropdown => {
+    const toggle = dropdown.querySelector('.navbar__dropdown-toggle');
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  });
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('.navbar__dropdown.is-open').forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('is-open');
+        dropdown.querySelector('.navbar__dropdown-toggle').setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
   // Booking bar tabs (visual only)
   document.querySelectorAll('.booking-bar__tabs button').forEach(btn => {
     btn.addEventListener('click', () => {
